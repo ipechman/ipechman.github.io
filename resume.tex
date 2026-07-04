@@ -1,0 +1,118 @@
+\documentclass[10pt, letterpaper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{helvet}
+\usepackage[hidelinks]{hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- COLORS ---
+\definecolor{accent}{HTML}{2C3E50}    % dark slate/blue
+\definecolor{darktext}{HTML}{2B2B2B}  % soft body text
+
+% --- SECTION HEADINGS ---
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{\MakeUppercase}[{\color{accent}\titlerule}]
+\titlespacing{\section}{0pt}{9pt}{4pt}
+
+% --- LINKS / PDF METADATA ---
+\hypersetup{
+  colorlinks=true, urlcolor=accent, linkcolor=accent,
+  pdftitle={Ilan Pechman -- Resume},
+  pdfauthor={Ilan Vieira Pechman},
+  pdfsubject={Aerospace Engineering Student},
+}
+
+% --- CUSTOM COMMANDS ---
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% Experience: Role + Dates  /  Org + Location
+\newcommand{\resumeExp}[4]{
+  \item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\color{accent}#1} & {\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+% Education: School + Location  /  Degree + Dates
+\newcommand{\resumeEdu}[4]{
+  \item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\color{accent}#1} & {\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+% One-line school: School + (Location -- Dates)
+\newcommand{\resumeEduOne}[3]{
+  \item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\color{accent}#1} & {\small #2 \quad \textit{#3}} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\begin{document}
+\color{darktext}
+
+% --- HEADER ---
+\begin{center}
+  {\Huge \textbf{\color{accent}Ilan Vieira Pechman}} \\ \vspace{6pt}
+  \small \color{accent}
+  Orlando, FL \ \textbullet\ \href{mailto:ilan.pechman@gmail.com}{ilan.pechman@gmail.com} \ \textbullet\ \href{https://www.linkedin.com/in/ilanpechman}{linkedin.com/in/ilanpechman} \ \textbullet\ \href{https://github.com/ipechman}{github.com/ipechman} \ \textbullet\ \href{https://ipechman.github.io}{ipechman.github.io}
+\end{center}
+
+% --- SUMMARY ---
+\section{Summary}
+\small Aerospace Engineering student at the University of Central Florida (B.S. expected December 2026) with hands-on research and manufacturing experience. Born in Rio de Janeiro, Brazil and based in the U.S. since age 13, pairing a strong engineering foundation with a deep interest in computer science and applied AI. Quick to pick up new tools and technologies, with a focus on problems where hardware and software meet.
+
+% --- EXPERIENCE ---
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
+  \resumeExp{Undergraduate Researcher}{January 2025 -- January 2026}{University of Central Florida}{Orlando, FL}
+  \begin{itemize}[leftmargin=0.2in, label={\textbullet}, topsep=2pt, itemsep=1pt]
+    \resumeItem{Measured and characterized wetting velocities of multiple fluids across engineered meta-materials.}
+    \resumeItem{Operated a high-powered laser to fabricate surface features and quantify their effect on wetting behavior.}
+    \resumeItem{Co-authoring a research paper documenting the methodology and findings (in progress).}
+  \end{itemize}
+\end{itemize}
+
+% --- EDUCATION ---
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=5pt]
+  \resumeEdu{University of Central Florida}{Orlando, FL}{B.S., Aerospace Engineering}{August 2024 -- December 2026}
+  \begin{itemize}[leftmargin=0.2in, label={\textbullet}, topsep=2pt, itemsep=1pt]
+    \resumeItem{Formula SAE -- machined and manufactured parts for the collegiate competition team.}
+  \end{itemize}
+  \resumeEdu{Austin Community College}{Austin, TX}{Associate's Degree, Engineering}{June 2022 -- June 2024}
+  \resumeEduOne{Rouse High School}{Leander, TX}{August 2020 -- May 2022}
+  \resumeEduOne{Windermere High School}{Windermere, FL}{August 2018 -- May 2020}
+  \resumeEduOne{Eliezer Max}{Rio de Janeiro, Brazil}{2007 -- 2017}
+\end{itemize}
+
+% --- PROJECTS ---
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
+  \resumeExp{Personal Portfolio Website}{2024 -- Present}{\href{https://ipechman.github.io}{ipechman.github.io}}{}
+  \begin{itemize}[leftmargin=0.2in, label={\textbullet}, topsep=2pt, itemsep=1pt]
+    \resumeItem{Designed and built a responsive personal site from scratch with vanilla HTML, CSS, and JavaScript.}
+    \resumeItem{Implemented a dynamic, manifest-driven photo gallery, a multi-theme system, and accessible keyboard navigation; deployed via GitHub Pages.}
+  \end{itemize}
+\end{itemize}
+
+% --- SKILLS ---
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
+  \small\item
+  \textbf{\color{accent}Engineering \& CAD:} Autodesk Inventor, Fusion 360, Ansys Fluent, LabVIEW, MATLAB \\
+  \textbf{\color{accent}Programming \& Data:} C++, Python, C\#, Data Analysis, Data Science \\
+  \textbf{\color{accent}Operating Systems:} Windows, Linux, macOS \\
+  \textbf{\color{accent}Languages:} Portuguese (Native), English (Native / Bilingual), Spanish (Working Proficiency)
+\end{itemize}
+
+\end{document}

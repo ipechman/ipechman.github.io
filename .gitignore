@@ -1,0 +1,21 @@
+# --- keep out of the public repo ---
+
+# original/unoptimized photos & old assets (web copies live in images/carousel/)
+data/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# editor folders
+.vscode/
+.idea/

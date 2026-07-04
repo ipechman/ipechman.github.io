@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ipechman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ilan Pechman — Aerospace Engineering student at UCF, developer, and astrophotographer. Projects, skills, resume, and star-trail photography.">
+    <meta name="author" content="Ilan Pechman">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ipechman">
+    <meta property="og:description" content="Aerospace Engineering student, developer, and astrophotographer.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>
+        document.documentElement.classList.add('js');
+        /* apply saved theme before first paint to avoid a flash */
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <!-- ===================== NAV ===================== -->
+    <nav id="nav">
+        <a href="#hero" class="brand" aria-label="Home">{&nbsp;ipechman&nbsp;}</a>
+
+        <div class="nav-right">
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about"><span class="accent">/</span>about</a></li>
+                <li><a href="#skills"><span class="accent">/</span>skills</a></li>
+                <li><a href="#projects"><span class="accent">/</span>projects</a></li>
+                <li><a href="#photography"><span class="accent">/</span>photography</a></li>
+                <li><a href="#contact"><span class="accent">/</span>contact</a></li>
+                <li><a href="Ilan_Pechman_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume"><span class="accent">/</span>resume&nbsp;&#8599;</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                <span class="theme-dot" aria-hidden="true"></span><span class="theme-name">night</span>
+            </button>
+
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header id="hero" class="hero">
+        <h1 id="intro" aria-label="ipechman">{ }</h1>
+
+        <p class="hero-sub">I'm a <span id="age">21</span> year-old student</p>
+        <p class="hero-tagline"><span class="comment">//</span> aerospace engineering @ UCF &middot; developer &middot; astrophotographer</p>
+
+        <div class="hero-links">
+            <a href="https://github.com/ipechman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="icon-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ilanpechman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="icon-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:ilan.pechman@gmail.com" aria-label="Email" class="icon-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            </a>
+            <a href="Ilan_Pechman_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume">view r&eacute;sum&eacute; &#8599;</a>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+            <span>scroll</span>
+            <span class="arrow">&darr;</span>
+        </a>
+    </header>
+
+    <main>
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title"><span class="prompt">$</span> whoami</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hey &mdash; I'm <strong>Ilan</strong>, an Aerospace Engineering student at the
+                        University of Central Florida. I was born in Rio de Janeiro and have been in the
+                        U.S. since I was 13, and somewhere along the way I fell for both rockets and code.
+                    </p>
+                    <p>
+                        I split my time between engineering &mdash; research, CAD, and the machine shop &mdash;
+                        and software, where I've been going deep on programming and applied AI. I like building
+                        things that actually work, learning fast, and problems where hardware meets software.
+                    </p>
+                    <p>
+                        Off the clock, I'm usually outside with a camera pointed at the night sky.
+                        The star trails further down are mine.
+                    </p>
+                </div>
+                <aside class="about-card" aria-label="Quick facts">
+                    <div class="card-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="fname">about.txt</span></div>
+                    <ul class="kv">
+                        <li><span class="k">role</span><span class="v">aerospace eng. student</span></li>
+                        <li><span class="k">school</span><span class="v">UCF</span></li>
+                        <li><span class="k">based</span><span class="v">Orlando, FL</span></li>
+                        <li><span class="k">focus</span><span class="v">aerospace &middot; software &middot; AI</span></li>
+                        <li><span class="k">hobby</span><span class="v">astrophotography</span></li>
+                        <li><span class="k">status</span><span class="v status-open">open to internships</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title"><span class="prompt">$</span> ls skills/</h2>
+            <p class="section-lead">Tools and languages I work with day to day.</p>
+
+            <div class="skills-groups">
+                <div class="skill-group">
+                    <h3 class="skill-label"><span class="accent">&#9656;</span> engineering &amp; cad</h3>
+                    <ul class="skills-grid">
+                        <li>Autodesk Inventor</li><li>Fusion 360</li><li>Ansys Fluent</li><li>LabVIEW</li><li>MATLAB</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-label"><span class="accent">&#9656;</span> programming &amp; data</h3>
+                    <ul class="skills-grid">
+                        <li>C++</li><li>Python</li><li>C#</li><li>Data Analysis</li><li>Data Science</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-label"><span class="accent">&#9656;</span> systems</h3>
+                    <ul class="skills-grid">
+                        <li>Windows</li><li>Linux</li><li>macOS</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-label"><span class="accent">&#9656;</span> languages</h3>
+                    <ul class="skills-grid">
+                        <li>Portuguese <span class="lvl">native</span></li>
+                        <li>English <span class="lvl">native</span></li>
+                        <li>Spanish <span class="lvl">working</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title"><span class="prompt">$</span> ls projects/</h2>
+            <p class="section-lead">Some of what I've been building and researching.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="brace">{</span>
+                        <h3>wetting-dynamics</h3>
+                        <span class="brace">}</span>
+                    </div>
+                    <p>Undergraduate research measuring how different fluids wet engineered meta-materials &mdash; using a high-powered laser to fabricate surface features and study their effect. Paper in progress.</p>
+                    <ul class="tags"><li>Research</li><li>MATLAB</li><li>Lasers</li></ul>
+                    <div class="project-links">
+                        <span class="badge">paper soon</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="brace">{</span>
+                        <h3>formula-sae</h3>
+                        <span class="brace">}</span>
+                    </div>
+                    <p>Part of UCF's Formula SAE team. Spent most of my time in the machine shop, manufacturing and machining parts for the collegiate competition car.</p>
+                    <ul class="tags"><li>Manufacturing</li><li>CAD</li><li>Machining</li></ul>
+                    <div class="project-links">
+                        <a href="https://www.fsaeonline.com/" target="_blank" rel="noopener noreferrer">about &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="brace">{</span>
+                        <h3>this-portfolio</h3>
+                        <span class="brace">}</span>
+                    </div>
+                    <p>The site you're looking at &mdash; a minimal, terminal-flavoured personal page built from scratch with vanilla HTML, CSS, and JavaScript.</p>
+                    <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                    <div class="project-links">
+                        <a href="https://github.com/ipechman" target="_blank" rel="noopener noreferrer">code &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--ghost">
+                    <div class="project-head">
+                        <span class="brace">{</span>
+                        <h3>next?</h3>
+                        <span class="brace">}</span>
+                    </div>
+                    <p>More on the way. See everything I'm tinkering with over on GitHub.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ipechman" target="_blank" rel="noopener noreferrer">github &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================== PHOTOGRAPHY ===================== -->
+        <section id="photography" class="section section--wide reveal">
+            <h2 class="section-title"><span class="prompt">//</span> photography</h2>
+            <p class="section-lead">Star trails &mdash; long-exposure shots of the night sky. <span class="hint">drag to explore &harr; &middot; click to view</span></p>
+
+            <div id="container" class="slider" data-mouse-down-at="0" data-prev-percentage="0">
+                <!-- Images are loaded dynamically from images/carousel/manifest.json,
+                     ordered by file name. Add photos to images/carousel/ and run
+                     `python tools/generate_manifest.py` to update. -->
+                <noscript>
+                    <img class="image" src="images/carousel/trail-3328.webp" alt="Circular star-trail long exposure in warm tones" />
+                </noscript>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title"><span class="prompt">$</span> ./contact</h2>
+            <div class="contact-box">
+                <div class="card-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="fname">contact &mdash; bash</span></div>
+                <div class="contact-body">
+                    <p class="line"><span class="prompt">$</span> echo "let's build something"</p>
+                    <p class="line out">let's build something</p>
+                    <p class="line"><span class="prompt">$</span> ls contact/</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/ipechman" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+                            github.com/ipechman
+                        </a>
+                        <a href="https://www.linkedin.com/in/ilanpechman" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                            linkedin.com/in/ilanpechman
+                        </a>
+                        <a href="mailto:ilan.pechman@gmail.com">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+                            ilan.pechman@gmail.com
+                        </a>
+                        <button class="copy-btn" id="copy-email" data-copy="ilan.pechman@gmail.com" aria-label="Copy email address">copy email</button>
+                        <a href="Ilan_Pechman_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h7L19 8v12.5H7z"/><path d="M14 3.5V8h5"/><path d="M9.5 13h5M9.5 16h5"/></svg>
+                            r&eacute;sum&eacute; (pdf)
+                        </a>
+                    </div>
+                    <p class="line"><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <span class="brand-sm">{ ipechman }</span>
+        <span class="muted">&copy; <span id="year">2026</span> Ilan Pechman &middot; built from scratch</span>
+        <a href="#hero" class="back-top">back to top &uarr;</a>
+    </footer>
+
+    <script type="text/javascript" src="js/Intro.js"></script>
+    <script type="text/javascript" src="js/age.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/extras.js"></script>
+</body>
+
+</html>
